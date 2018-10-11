@@ -9,6 +9,7 @@ import pl.gajowski.mateusz.hotelbooking.room.type.dto.RoomTypeDTO;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RoomAvailableRoomsDTO {
+    private long id;
     private String number;
     private int floor;
     private int capacity;

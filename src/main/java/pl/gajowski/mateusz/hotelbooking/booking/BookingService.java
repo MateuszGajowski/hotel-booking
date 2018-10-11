@@ -51,6 +51,10 @@ public class BookingService {
             throw new BadRequestException("Trying to cancel another customer booking");
         }
 
+        if (bookingEntity.getStatus() == BookingEntity.Status.CANCELED) {
+            throw new BadRequestException("Booking already cancelled");
+        }
+
         final BookingEntity.Status previousStatus = bookingEntity.getStatus();
         bookingEntity.setStatus(BookingEntity.Status.CANCELED);
 

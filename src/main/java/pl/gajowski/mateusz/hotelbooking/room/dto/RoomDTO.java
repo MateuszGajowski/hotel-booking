@@ -6,9 +6,9 @@ import pl.gajowski.mateusz.hotelbooking.room.type.dto.RoomTypeDTO;
 
 @Data
 public class RoomDTO {
+    private long id;
     private String number;
     private int floor;
-    private int capacity;
     private HotelDTO hotel;
     private RoomTypeDTO type;
 }

@@ -22,7 +22,7 @@ public class HotelEntity extends BaseEntity {
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
-    private String country;
+    private String countryCode;
     @Column(nullable = false)
     private String city;
     @Column(nullable = false)

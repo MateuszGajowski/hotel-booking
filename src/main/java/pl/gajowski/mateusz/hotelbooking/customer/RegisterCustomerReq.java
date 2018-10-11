@@ -26,7 +26,6 @@ public class RegisterCustomerReq {
     private String surname;
 
     @NotBlank
-    @Pattern(regexp = RegexExp.PHONE_NUMBER_REGEX)
     private String phoneNumber;
 
     @Email
