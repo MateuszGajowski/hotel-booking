@@ -12,4 +12,4 @@ To access H2 GUI: http://localhost:8080/h2
 mvn spring-boot:run
 
 ### How to start acceptance tests
-mvn -Dtest=pl.gajowski.mateusz.hotelbooking.AcceptanceTestSpec test
+mvn clean verify -P integration-test
